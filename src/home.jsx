@@ -1,14 +1,11 @@
-import React, { useState } from 'react'
-const HomeComponent = () => {
-    const [count, setCount] = useState(0);
+import React from 'react'
+
+const Home = () => {
     return (
-        <div>
-            <button onClick={() => setCount(count + 1)}>+</button>
-            <button onClick={() => setCount(count - 1)}>-</button>
-            <p>Count: {count}</p>
+        <div> home page
 
         </div>
-
     )
-};
-export default HomeComponent;
+}
+
+export default Home
