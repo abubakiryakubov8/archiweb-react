@@ -1,11 +1,14 @@
 import React from 'react'
+import { MainContainer } from './generalStyle'
 
 const Product = () => {
-    return (
-        <div> Product page
-
-        </div>
-    )
+  return (
+    <MainContainer>
+      <div>
+        Product page
+      </div>
+    </MainContainer>
+  )
 }
 
 export default Product
