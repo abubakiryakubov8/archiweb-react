@@ -1,16 +1,16 @@
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import { ThemeProvider } from 'styled-components'
+import { theme, GlobalStyle } from './styles/globalStyle'
+import App from './app'
 
-import RouterComp from './router';
-
-
-
-createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
-
-    <RouterComp />
-  </BrowserRouter >
-);
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      <App />
+    </ThemeProvider>
+  </React.StrictMode>
+)
 
 
